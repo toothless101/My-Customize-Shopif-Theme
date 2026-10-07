@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:names.header",
+  "sections": {
+    "header_announcements_9jGBFp": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_BxgCk9": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": "",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none",
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_BxgCk9"
+      ],
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_width": 1,
+        "divider_color": "{{ settings.color_palette.color2 }}",
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
+    },
+    "header_section": {
+      "type": "header",
+      "blocks": {
+        "header-logo": {
+          "type": "_header-logo",
+          "static": true,
+          "settings": {
+            "hide_logo_on_home_page": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
+        "header-menu": {
+          "type": "_header-menu",
+          "static": true,
+          "settings": {
+            "menu": "main-menu",
+            "background_color": "{{ settings.color_palette.background }}",
+            "text_color": "",
+            "type_font_primary_size": "0.875rem",
+            "menu_font_style": "inverse",
+            "type_font_primary_link": "body",
+            "type_case_primary_link": "none",
+            "menu_style": "featured_products",
+            "featured_products_aspect_ratio": "4 / 5",
+            "featured_collections_aspect_ratio": "16 / 9",
+            "image_border_radius": 0,
+            "navigation_bar": false,
+            "background_color_navigation_bar": "{{ settings.color_palette.background }}",
+            "text_color_navigation_bar": "",
+            "drawer_accordion": false,
+            "drawer_accordion_expand_first": false,
+            "drawer_dividers": false
+          },
+          "blocks": {}
+        }
+      },
+      "settings": {
+        "logo_position": "left",
+        "menu_position": "left",
+        "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
+        "show_search": true,
+        "search_position": "right",
+        "search_row": "top",
+        "show_country": true,
+        "country_selector_style": false,
+        "show_language": true,
+        "localization_font": "heading",
+        "localization_font_size": "0.875rem",
+        "localization_position": "right",
+        "localization_row": "top",
+        "section_width": "page-width",
+        "section_height": "standard",
+        "enable_sticky_header": "always",
+        "divider_width": 0,
+        "divider_size": "page-width",
+        "divider_color": "",
+        "border_width": 0,
+        "bottom_border_color": "",
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
+        "background_color_top": "{{ settings.color_palette.background }}",
+        "text_color_top": "",
+        "background_color_bottom": "",
+        "text_color_bottom": "",
+        "bubble_style": "default",
+        "bubble_background_color": "",
+        "bubble_text_color": "",
+        "enable_transparent_header_home": false,
+        "home_inverse_logo": false,
+        "text_color_transparent_home": "",
+        "enable_transparent_header_product": false,
+        "product_inverse_logo": false,
+        "text_color_transparent_product": "",
+        "enable_transparent_header_collection": false,
+        "collection_inverse_logo": false,
+        "text_color_transparent_collection": ""
+      }
+    },
+    "liquid_practice_VwrmRD": {
+      "type": "liquid-practice",
+      "name": "Liquid Practice",
+      "settings": {}
+    },
+    "my_section_63KAeM": {
+      "type": "my-section",
+      "name": "My Section",
+      "settings": {
+        "heading": "",
+        "heading_color": "black",
+        "product_title_color": "blue",
+        "product_collection": "frontpage"
+      }
+    },
+    "my_section_PXJr6r": {
+      "type": "my-section",
+      "name": "My Section",
+      "settings": {
+        "heading": "",
+        "heading_color": "black",
+        "product_title_color": "black",
+        "product_collection": ""
+      }
+    },
+    "customize_product_w7cbnF": {
+      "type": "customize-product",
+      "name": "Customize Product Section",
+      "settings": {
+        "product_collection": "tshirt"
+      }
+    },
+    "testimonial_block_zKjeHK": {
+      "type": "testimonial-block",
+      "blocks": {
+        "testimonial_AaiMWw": {
+          "type": "testimonial",
+          "settings": {
+            "name": "Hilary Mae",
+            "quote": "Probably will buy again."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_AaiMWw"
+      ],
+      "name": "Testimonials",
+      "settings": {}
+    },
+    "featured_cards_9CEGzg": {
+      "type": "featured-cards",
+      "blocks": {
+        "card_yxXkm4": {
+          "type": "card",
+          "settings": {
+            "title": "Quality",
+            "description": "We provide high-quality products"
+          }
+        },
+        "card_PQMcfe": {
+          "type": "card",
+          "settings": {
+            "title": "Shipping",
+            "description": "We Offer reliable and fast shipping"
+          }
+        },
+        "card_YmqMbh": {
+          "type": "card",
+          "settings": {
+            "title": "Support",
+            "description": "Our support team is ready to help always."
+          }
+        }
+      },
+      "block_order": [
+        "card_yxXkm4",
+        "card_PQMcfe",
+        "card_YmqMbh"
+      ],
+      "name": "Feature Cards",
+      "settings": {
+        "heading": "Why Choose Us?"
+      }
+    }
+  },
+  "order": [
+    "header_announcements_9jGBFp",
+    "header_section",
+    "liquid_practice_VwrmRD",
+    "my_section_63KAeM",
+    "my_section_PXJr6r",
+    "customize_product_w7cbnF",
+    "testimonial_block_zKjeHK",
+    "featured_cards_9CEGzg"
+  ]
+}

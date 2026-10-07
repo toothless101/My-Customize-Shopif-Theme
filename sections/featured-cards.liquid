@@ -1,0 +1,104 @@
+<section class="feature-cards">
+    <h2>{{ section.settings.heading }}</h2>
+     <div class="feature-cards_container">
+        {% comment %}
+            HARD CODED  
+        <div class="feature-card">
+            <h3>Quality</h3>
+            <p>We provide high-quality products.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Shipping</h3>
+            <p>We offer fast and reliable shipping</p>
+        </div>
+        <div class="feature-card">
+            <h3>Support</h3>
+            <p>Our support team is here to help.</p>
+        </div> {% endcomment %}
+
+        {% for block in section.blocks %}
+              <div class="feature-card" {{ block.shopify_attributes }}>
+                <h3>{{ block.settings.title }}</h3>
+                <p>{{ block.settings.description }}</p>
+            </div>
+        {% endfor %}
+    </div> 
+</section>
+
+<style>
+    .feature-cards {
+        padding: 60px 20px;
+        background-color: pink;
+    }
+
+    .feature-cards h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feature-cards_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .feature-card {
+        flex: 1 1 0;
+        min-width: 280px;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .feature-cards {
+            padding: 40px 15px;
+        }
+
+        .feature-cards__container {
+            flex-direction: column;
+        }
+
+        .feature-card {
+            width: 100%;
+        }
+    }
+</style>
+
+
+{% schema %}
+{
+    "name": "Feature Cards",
+    "settings":[
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Why Choose Us?"
+        }
+    ],
+    "blocks": [{
+        "type": "card",
+        "name":"Card",
+        "settings": [
+            {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Quality"
+            },
+            {
+            "type": "textarea",
+            "id": "description",
+            "label": "Desctiption",
+            "default": "We provide high-quality products"
+            }
+        ]
+
+    }],
+    "presets": [{
+        "name": "Feature Cards"
+    }]
+}
+{% endschema %}

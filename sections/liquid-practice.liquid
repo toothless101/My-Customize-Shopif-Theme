@@ -1,0 +1,72 @@
+{% comment %} <h1>Hello from Liquid!</h1>
+{% comment %}
+
+{% endcomment %}
+<p>Welcome to {{ shop.name | downcase | capitalize }}!</p>
+<p>Store Url: {{ shop.url | downcase}}</p>
+<p>Cart: {{ cart.item_count }}</p>
+
+<p>{{ product.metafields.custom.materials.value }}</p>
+
+{% if shop.name contains 'Hilary' %}
+  <p>This is a shirt.</p>
+{% endif %} 
+
+{%if product.price > 1000 %}
+  <p>mahal ra kaayo</p>
+{% elsif product.tags contains 'sale' %}
+    <p>Sale</p>
+    {% else %}
+      <p>Unavailable</p>
+    {% endif %}
+  
+{% for product in collection.products  %}
+<p>{{ product.title }}</p>
+<p>{{ product.price }}</p>
+{% endfor %}
+
+
+{% assign name = "shirt" %}
+{{ name | upcase }}
+
+{% assign title = "  hello world  " %}
+
+{{ title | strip | upcase }} {% endcomment %}
+
+
+{% comment %} <div class="product-card"> {% endcomment %}
+
+  {% comment %} <h2>{{ product.title }}</h2>
+
+  <p>{{ product.price | money }}</p>
+
+  {% if product.available %}
+    <p>In Stock</p>
+  {% else %}
+    <p>Sold Out</p>
+  {% endif %} {% endcomment %}
+
+{% comment %} </div> {% endcomment %}
+
+<p>{{ product.title}}</p>
+
+
+{% schema %}
+{
+  "name": "Liquid Practice",
+  "presets": [
+    {
+      "name": "Liquid Practice"
+    }
+  ],
+  "settings": []
+}
+{% endschema %}
+
+{% comment %} Student Activity 3 — Build a Product Card
+Ask students to create a simple product card.
+Requirements
+They should display:
+1.	Product title
+2.	Product price
+3.	Product availability {% endcomment %}

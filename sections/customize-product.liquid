@@ -1,0 +1,25 @@
+<h1>PRODUCTS</h1>
+{% for product in section.settings.product_collection.products %}
+    <h3>{{ product.title }}</h3>
+    {% for variant in product.variants %}
+        <p>{{ variant.title }}</p>
+        {%  if variant.available %}
+        <p>Available</p>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% schema %}{
+    "name": "Customize Product Section",
+   "settings": [{
+        "type": "collection",
+        "id" : "product_collection",
+        "label": "Custom Collection"
+    }],
+    "presets": [
+        {
+            "name": "Customize Product Section"
+        }
+    ]   
+}
+{% endschema %}

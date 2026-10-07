@@ -1,0 +1,46 @@
+<h2 style="color: {{ section.settings.heading_color }}!important">{{ section.settings.heading }}</h2>
+{% for product in section.settings.product_collection.products %}  
+    {% comment %} *Go to this section, then access the setting named product_collection.* {% endcomment %}
+   <h1 style="color:{{ section.settings.product_title_color }} !important"> {{ product.title }}</h1> <br>
+   <h3>{{ product.price | money }}</h3>
+    {% if product.available %}
+        <p>Available</p>
+    {% else %}
+    <button disabled>Sold Out</button>
+    {% endif %}{% endfor %}
+{% schema %}
+{
+    "name": "My Section",
+    "settings": [
+       { 
+            "type": "text",
+            "id" : "heading",
+            "label": "Heading"
+        },
+         { 
+            "type": "text",
+            "id" : "heading_color",
+            "label": "Heading Color",
+            "default": "black"
+        },
+         { 
+            "type": "text",
+            "id" : "product_title_color",
+            "label": "Product Title Color",
+            "default": "black"
+        },
+
+        { 
+            "type": "collection",
+            "id" : "product_collection",
+            "label": "Custom Collection"
+        }
+    ],
+    "presets": [
+        {
+            "name": "My Section"
+        }
+    ]   
+}
+
+{% endschema %}
